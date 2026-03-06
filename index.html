@@ -1,17 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="bg">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Demo</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <nav>
-        <ul>
-           <li><a href="https://">Link text</a></li>
-           <li><a href="https://">Link text</a></li>
-           <li><a href="https://">Link text</a></li>
-        </ul>
-    </nav>
+  <main class="page">
+    <section class="card" aria-label="Login form">
+      <h1>Вход</h1>
+      <p class="muted">Демо форма с username и password.</p>
+
+      <form class="form" action="#" method="post">
+        <label class="field">
+          <span class="label">Username</span>
+          <input
+            type="text"
+            name="username"
+            placeholder="anton_qa"
+            autocomplete="username"
+            required
+            minlength="3"
+          />
+        </label>
+
+        <label class="field">
+          <span class="label">Password</span>
+          <input
+            type="password"
+            name="password"
+            placeholder="••••••••"
+            autocomplete="current-password"
+            required
+            minlength="6"
+          />
+        </label>
+
+        <button class="btn" type="submit">Login</button>
+
+        <div class="row">
+          <label class="checkbox">
+            <input type="checkbox" name="remember" />
+            <span>Remember me</span>
+          </label>
+
+          <a class="link" href="#">Forgot password?</a>
+        </div>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
